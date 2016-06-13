@@ -445,3 +445,41 @@ a:hover {
 #foot p a:hover{
 	border-bottom: none;
 }
+
+@media screen and (max-width: 640px) {
+	ul.projects li{
+		width: 100%;
+	}
+
+	h2{
+		font-size: 1.3em;
+	}
+
+	.utility{
+		position: static;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	#head ul li{
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	#head{
+		text-align: center;
+		padding: 50px;
+	}
+
+	.ext-loaded ul li{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	#foot p{
+		position: static;
+		text-align: center;
+		margin-top: 15px;
+	}
+}
