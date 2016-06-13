@@ -6,4 +6,4 @@ An easier and faster way to find out what is in your projects folders from the w
 
 ## How to use :
 
-Just paste all the files(index.php, index.js, index.css, arrow.png) in your www/ folder and get strated !
+Just paste all the files (index.php, index.js, index.css, arrow.png) in your www/ folder and get strated !
