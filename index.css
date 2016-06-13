@@ -446,7 +446,7 @@ a:hover {
 	border-bottom: none;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1120px) {
 	ul.projects li{
 		width: 100%;
 	}
