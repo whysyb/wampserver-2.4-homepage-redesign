@@ -18,7 +18,6 @@ if(langageLink.innerText == 'Version Française'){
 }
 
 var showContent = function(){
-	console.log(langageLink.innerText);
 	if(ext.classList.contains('closed')){
 		ext.classList.remove('closed');
 		if(langageLink.innerText == 'Version Française'){
@@ -114,8 +113,23 @@ var setPath = function(){
 	}
 }
 
+var alphabetSort = function(){
+	var extentionList = document.querySelector('.ext-loaded');
+	var extentions = extentionList.querySelectorAll('li');
+	var list = [];
+	for(var i = 0; i < extentions.length; i++){
+		list.push(extentions[i]);
+		list.reverse();
+	}
+}
+
 
 //rendering
+
+var meta = document.createElement('meta');
+meta.name = "viewport";
+meta.content = "width=device-width, initial-scale=1.0";
+document.getElementsByTagName('head')[0].appendChild(meta);
 
 loadedN.innerText = '('+loadedExt.length+')';
 showButton.addEventListener("click", showContent, true); 
@@ -129,3 +143,4 @@ for(var d = 0; d < projectSubfolderLink.length; d++){
 }
 setPath();
 projectsFolder();
+alphabetSort();
